@@ -12,6 +12,10 @@ The application is built with Flask, uses Milvus Lite for efficient vector searc
 - **Web Interface:** A simple, clean UI to enter queries and view sorted, de-duplicated results.
 - **Production-Ready:** Containerized with a production-grade Gunicorn WSGI server, ready for deployment on platforms like Google Cloud Run.
 
+## Screenshot
+
+![Application Screenshot](img/application_screenshot.png)
+
 ## How It Works
 
 The application loads a dataset of research papers and uses two different sentence-transformer models to generate vector embeddings for each paper's title and abstract. These embeddings are stored in two separate collections within a single Milvus Lite database file.
