@@ -14,9 +14,14 @@ The application is built with Flask, uses Milvus Lite for efficient vector searc
 
 ## Screenshot
 
+### UI Application screenshot
 ![Application Screenshot](img/application_screenshot.png)
 
-# URL
+### Files screenshot (from personal gdrive)
+Below shows the files like finetuned model, and csv papers
+![Application Screenshot](img/files.png)
+
+# Application UI URL
 
 https://cloudrun-456311304734.us-east1.run.app/
 
