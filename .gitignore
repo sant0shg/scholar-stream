@@ -1,3 +1,3 @@
 app/milvus_demo.db
 app/papers.csv
-app/finetuned_model_from_analysis/*
+app/finetuned_model_from_analysis/**/*
