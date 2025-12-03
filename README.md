@@ -35,6 +35,19 @@ When a user enters a query:
 3.  It then searches the **base collection**, filtering out any paper IDs that were already found in the custom search to ensure results are unique.
 4.  The results from both collections are combined, sorted by relevance score, and displayed in the UI, with clear labels indicating which model found each result.
 
+## Fine-Tuning with LLM as Judge
+
+The custom model was fine-tuned using the **"LLM as Judge"** technique to create a high-quality training dataset. This process involved:
+
+1.  **Generating Question/Answer Pairs:** A powerful LLM (like GPT-4) was used to read through the research papers and generate relevant questions and answers based on their content.
+2.  **Creating Training Triplets:** These question/answer pairs were then used to form "triplets" for training. Each triplet consists of:
+    - **Anchor:** A question generated from a paper.
+    - **Positive:** The corresponding answer from the same paper.
+    - **Negative:** An answer from a different, unrelated paper.
+3.  **Fine-Tuning the Model:** The sentence-transformer model was then fine-tuned on these triplets. This process teaches the model to place the vector embeddings of the anchor (question) and the positive (correct answer) closer together in the vector space, while pushing the negative (wrong answer) farther away.
+
+This technique allows the model to develop a more nuanced understanding of semantic relevance, leading to significantly improved search results compared to the base model.
+
 ## Project Structure
 
 ```
