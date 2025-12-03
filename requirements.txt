@@ -1,0 +1,7 @@
+Flask
+pandas
+numpy
+torch
+sentence-transformers
+pymilvus[milvus_lite]
+gunicorn
