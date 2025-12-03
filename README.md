@@ -16,6 +16,10 @@ The application is built with Flask, uses Milvus Lite for efficient vector searc
 
 ![Application Screenshot](img/application_screenshot.png)
 
+# URL
+
+https://cloudrun-456311304734.us-east1.run.app/
+
 ## How It Works
 
 The application loads a dataset of research papers and uses two different sentence-transformer models to generate vector embeddings for each paper's title and abstract. These embeddings are stored in two separate collections within a single Milvus Lite database file.
